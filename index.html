@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudoPlay</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="image">
+            <img src="Logo.png" alt="">
+        </div>
+        <div id="home">
+            <button>
+                <img src="home.svg" alt="">
+            </button>
+        </div>
+        <div class="leaderboard-dropdown">
+            <button id="leaderboard-toggle">🏆 Leaderboard ▼</button>
+            <div id="leaderboard-list" class="hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        </div>
+        <div id="title">
+            <h1><span style="color: yellow;">Sudo</span>Play</h1>
+        </div>
+
+        <div class="Timer">
+            <div id="timer" class="hidden">Time: 00:00</div>
+
+        </div>
+        <div id="player-name-box">
+            <input type="text" id="player-name" placeholder="Enter your name..." />
+            <p id="player-display" class="hidden">Welcome, <span id="player-output"></span>!</p>
+        </div>
+
+    </header>
+    <div class="welcome-container">
+        <h1 id="welcomeText">Welcome to <span>SudoPlay</span>!</h1>
+    </div>
+    <div class="container">
+        <button class="play-button" id="playBtn"></button>
+    </div>
+    <h1 id="Play">Click here to <span>Play</span>!</h1>
+    </div>
+    <div id="error-message" class="hidden">Invalid move! Try again.</div>
+    <div id="game-wrapper">
+        <div id="game-area">
+            <div id="sudoku-board" class="sudoku-hidden"></div>
+
+            <div id="scorecard" class="hidden">
+                <h3>Scorecard</h3>
+
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="sudoku-board" class="sudoku-hidden"></div> -->
+
+
+    <div id="nos" class="hidden">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+        <div class="number">6</div>
+        <div class="number">7</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+    </div>
+
+    <div id="control-buttons" class="nos-hidden">
+        <div id="newGameBtn" class="btn">Start New Game</div>
+        <div id="showSolutionBtn" class="btn">Show Solution</div>
+    </div>
+
+    <div id="win-message" class="hidden">
+        <h1>Congratulations! You solved the puzzle</h1>
+        <p>You are a genius</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
